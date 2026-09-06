@@ -1,2 +1,2 @@
 # website
-web site for publiusnakamoto.net
+web site for publiusnakamoto.com
