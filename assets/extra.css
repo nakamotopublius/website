@@ -1,0 +1,6 @@
+/* assets/extra.css
+   Small helpers to add the Tailwind-like utility used on index.html
+*/
+.text-green-600 {
+  color: #16a34a;
+}
