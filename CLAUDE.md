@@ -17,3 +17,5 @@ Static HTML site for Publius Nakamoto's course-study project (Peterson Academy w
 ## Workflow notes
 - Preview changes locally before pushing: `python3 -m http.server 8934 --directory .` and open `http://localhost:8934/`.
 - This is a small enough site that direct edits + push to `main` is the normal workflow — no PR/branch process currently in use.
+- **No agent pushes without Gary's explicit sign-off first.** Show the diff and wait for approval before committing/pushing anything, no exceptions.
+- **Commit messages must identify the agent/tool that made the change**, e.g. `Fix contact form styling — via Claude` / `— via ChatGPT` / `— via Grok` / `— via Gemini`. This keeps `git log` itself an accurate record of who touched what, alongside the Change Log on the Development page.
