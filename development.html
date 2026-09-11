@@ -101,6 +101,17 @@ claude</pre>
 <li><span class="text-[#2c2416]/50">2026-09-06 07:20</span> — Site mirrored from live publiusnakamoto.com into this repo; Development page and CLAUDE.md added</li>
 </ul>
 <p class="text-xs text-[#2c2416]/50 mt-2">Add a line here for any notable change — full history is always in <code class="bg-[#2c2416]/5 px-1 rounded">git log</code>.</p>
+
+<h2 class="font-serif text-2xl mt-10 mb-3">Editing This Site with ChatGPT</h2>
+<p class="text-sm text-[#2c2416]/70 mb-3">This is the working routine for changes made from the laptop. It is written for both a person giving instructions and an AI carrying them out.</p>
+<ol class="list-decimal pl-5 space-y-2 text-sm text-[#2c2416]/80 leading-relaxed">
+<li><strong>Describe the change and request a local preview.</strong> For example: “Change the large homepage name to blue. Show me locally; do not push yet.” ChatGPT should change only the requested files and leave the live site alone.</li>
+<li><strong>Review the local site.</strong> Open the local preview URL ChatGPT provides. The port number can vary from session to session; <code class="bg-[#2c2416]/5 px-1 rounded">http://127.0.0.1:8935/</code> is an example only. Check the change in the browser before approving it.</li>
+<li><strong>Give a separate push instruction.</strong> Say “push” only when the local version is approved. ChatGPT should commit the approved change, push it to the <code class="bg-[#2c2416]/5 px-1 rounded">main</code> branch of <code class="bg-[#2c2416]/5 px-1 rounded">nakamotopublius/website</code>, then verify the public site.</li>
+<li><strong>Let Netlify publish the site.</strong> Netlify automatically deploys every successful push to <code class="bg-[#2c2416]/5 px-1 rounded">main</code>. ChatGPT should confirm that <code class="bg-[#2c2416]/5 px-1 rounded">https://publiusnakamoto.com/</code> shows the approved change.</li>
+<li><strong>Keep credentials private.</strong> GitHub authentication is stored in this Mac’s Keychain. Never put a personal access token in a page, commit, repository file, or chat message.</li>
+</ol>
+<p class="text-sm text-[#2c2416]/70 mt-4"><strong>Usage note:</strong> Codex’s five-hour allowance can rise faster than the visible amount of website work, because it includes the model’s reasoning and the work of inspecting files, testing previews, using tools, and verifying deployments. For small changes, batch decisions into one local review, avoid repeated color trials, and check usage only when it is useful. Use the lightest suitable model when speed is not important.</p>
 </div>
 </div>
 </body>
